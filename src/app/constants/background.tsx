@@ -8,7 +8,7 @@ export default function Background() {
             top: 0,
             width: '100vw', 
             height: '100vh', 
-            zIndex: -1 
+            zIndex: -1,
         }}>
             <Particles
                 particleColors={['#ffffff', '#ffffff']}
@@ -21,9 +21,10 @@ export default function Background() {
                 disableRotation={false}
             />
             <Aurora
-                colorStops={['#00d8ff', '#7cff67', '#00d8ff']}
+                colorStops={["#00d8ff", "#7cff67", "#00d8ff"]}
                 amplitude={1.0}
                 blend={0.5}
+                speed={0.5}
             />
         </div>
     );
