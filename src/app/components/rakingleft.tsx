@@ -7,7 +7,7 @@ export default function RakingLeft() {
                 <h6 className="text-sm font-MMomo text-gray-950 ml-20">1 year exp.</h6>
                 <h3 className="text-lg font-MMomo text-gray-950">Aws</h3>
             </div>
-            <RakingBar rank={5} position={1} />
+            <RakingBar rank={3} position={1} />
 
             <div className="flex items-center justify-between w-full mt-4">
                 <h6 className="text-sm font-MMomo text-gray-950 ml-20">3 year exp.</h6>
@@ -20,6 +20,18 @@ export default function RakingLeft() {
                 <h3 className="text-lg font-MMomo text-gray-950">PHP</h3>
             </div>
             <RakingBar rank={1} position={1} />
+
+            <div className="flex items-center justify-between w-full mt-4">
+                <h6 className="text-sm font-MMomo text-gray-950 ml-20">4 year exp.</h6>
+                <h3 className="text-lg font-MMomo text-gray-950">Python</h3>
+            </div>
+            <RakingBar rank={4} position={1} />
+
+            <div className="flex items-center justify-between w-full mt-4">
+                <h6 className="text-sm font-MMomo text-gray-950 ml-20">4 year exp.</h6>
+                <h3 className="text-lg font-MMomo text-gray-950">C++</h3>
+                </div>
+            <RakingBar rank={4} position={1} />
         </div>
     );
 }
