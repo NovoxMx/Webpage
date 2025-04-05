@@ -1,4 +1,4 @@
-import Novox from "./Novox";
+import Novox from "../components/Novox";
 
 export default function Navbar() {
     return (
