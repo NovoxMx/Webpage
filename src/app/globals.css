@@ -54,9 +54,16 @@
   src: url("../app/fonts/PPModelPlastic-Light.otf");
 }
 
+@font-face {
+  font-family: "PPModelsans";
+  font-style: Light;
+  src: url("../app/fonts/PPModelSans-Light.otf");
+}
+
 @theme {
   --font-MPMomo: "PPModelplasticMomo", sans-serif;
   --font-MMomo: "PPModelMomo", sans-serif;
+  --font-MSMomo: "PPModelsans", sans-serif;
 }
 
 :root {
