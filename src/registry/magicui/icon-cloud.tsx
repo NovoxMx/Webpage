@@ -225,7 +225,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
       const dx = mousePos.x - centerX;
       const dy = mousePos.y - centerY;
       const distance = Math.sqrt(dx * dx + dy * dy);
-      const speed = 0.003 + (distance / maxDistance) * 0.01;
+      const speed = 0.003 + (distance / maxDistance) * 0.004;
 
       if (targetRotation) {
         const elapsed = performance.now() - targetRotation.startTime;
@@ -310,7 +310,7 @@ export function IconCloud({ icons, images }: IconCloudProps) {
   return (
     <canvas
       ref={canvasRef}
-      width={400}
+      width={500}
       height={400}
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
