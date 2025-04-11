@@ -141,7 +141,8 @@ export default function Aurora(props: AuroraProps) {
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     gl.canvas.style.backgroundColor = "#000000";
 
-    const program: Program | undefined;
+    // eslint-disable-next-line prefer-const
+    let program: Program | undefined;
 
     function resize() {
       if (!ctn) return;
@@ -155,10 +156,8 @@ export default function Aurora(props: AuroraProps) {
     window.addEventListener("resize", resize);
 
     const geometry = new Triangle(gl);
-    if (geometry.attributes.uv) {
-      // TypeScript may require a type assertion here.
-      delete (geometry.attributes as any).uv;
-    }
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    delete (geometry.attributes as any).uv;
 
     const colorStopsArray = colorStops.map((hex) => {
       const c = new Color(hex);
@@ -208,6 +207,7 @@ export default function Aurora(props: AuroraProps) {
       }
       gl.getExtension("WEBGL_lose_context")?.loseContext();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [amplitude]);
 
   return <div ref={ctnDom} className="w-full h-full" />;
