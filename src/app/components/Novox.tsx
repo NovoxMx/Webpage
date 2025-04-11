@@ -1,7 +1,3 @@
-interface NovoxProps {
-    isDark: boolean;
-}
-
 export default function Novox() {
     return (
         <svg
