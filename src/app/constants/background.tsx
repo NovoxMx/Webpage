@@ -1,5 +1,5 @@
 import Particles from "../components/particles/particles";
-import Aurora from "../components/aurora/aurora";
+import Aurora from "../components/aurora";
 
 export default function Background() {
     return (

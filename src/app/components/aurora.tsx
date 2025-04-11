@@ -1,8 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Renderer, Program, Mesh, Color, Triangle } from "ogl";
 
-import "./aurora.css";
-
 const VERT = `#version 300 es
 in vec2 position;
 void main() {
@@ -141,7 +139,7 @@ export default function Aurora(props: AuroraProps) {
     gl.clearColor(0, 0, 0, 0);
     gl.enable(gl.BLEND);
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
-    gl.canvas.style.backgroundColor = "black";
+    gl.canvas.style.backgroundColor = "#000000";
 
     let program: Program | undefined;
 
@@ -212,5 +210,5 @@ export default function Aurora(props: AuroraProps) {
     };
   }, [amplitude]);
 
-  return <div ref={ctnDom} className="aurora-container" />;
+  return <div ref={ctnDom} className="w-full h-full" />;
 }
