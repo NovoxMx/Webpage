@@ -251,6 +251,11 @@ export function IconCloud({ icons, images }: IconCloudProps) {
         };
       }
 
+      setRotation({
+        x: rotationRef.current.x,
+        y: rotationRef.current.y,
+      });
+
       iconPositions.forEach((icon, index) => {
         const cosX = Math.cos(rotationRef.current.x);
         const sinX = Math.sin(rotationRef.current.x);

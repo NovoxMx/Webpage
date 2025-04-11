@@ -13,7 +13,7 @@ interface AnimationTextProps {
     encryptedClassName?: string
     parentClassName?: string
     animateOn?: 'view' | 'hover'
-    [key: string]: any
+    [key: string]: unknown // Cambiado de `any` a `unknown`
 }
 
 export default function AnimationText({
