@@ -141,7 +141,7 @@ export default function Aurora(props: AuroraProps) {
     gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
     gl.canvas.style.backgroundColor = "#000000";
 
-    let program: Program | undefined;
+    const program: Program | undefined;
 
     function resize() {
       if (!ctn) return;
