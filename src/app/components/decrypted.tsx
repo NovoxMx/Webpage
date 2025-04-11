@@ -1,8 +1,14 @@
 import AnimationText from "../constants/animationtext";
 
-export default function Decrypted({ children }: { children: string }) {
+export default function Decrypted({
+    children,
+    className = "",
+}: {
+    children: string;
+    className?: string;
+}) {
     return (
-        <div className="font-MMomo text-gray-950 text-lg">
+        <div className={`${className}`}>
             <AnimationText
                 text={children}
                 animateOn="view"
