@@ -12,8 +12,8 @@ export default function Home() {
       <Navbar />
       <About />
       <Skills />
-      <Background />
       <Education />
+      <Background />
     </div>
 
   );
