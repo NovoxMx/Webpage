@@ -1,12 +1,14 @@
+import { useEffect, useState } from "react";
+
 interface RankingBarProps {
     rank: number;
     position: number;
 }
 
-export default function RankingBar({ rank, position }: RankingBarProps, ) {
+export default function RankingBar({ rank, position }: RankingBarProps) {
     const positionData = [
-        {pos: "justify-items-end"},
-        {pos: "justify-items-start"},
+        { pos: "justify-items-end" },
+        { pos: "justify-items-start" },
     ];
 
     const rankData = [
@@ -17,13 +19,9 @@ export default function RankingBar({ rank, position }: RankingBarProps, ) {
         { width: "w-6/7", text: "Expert", background: "bg-sky-500" },
     ];
 
-    // Validar que el rango esté entre 1 y 5
     const validRank = Math.min(Math.max(rank, 1), 5);
-
-    // Validar que el rango esté entre 1 y 2
     const pos = Math.min(Math.max(position, 1), 2) === 1 ? positionData[0].pos : positionData[1].pos;
 
-    // Validar que el índice sea válido antes de desestructurar
     const rankItem = rankData[validRank - 1];
     if (!rankItem) {
         return (
@@ -35,9 +33,23 @@ export default function RankingBar({ rank, position }: RankingBarProps, ) {
 
     const { width, text, background } = rankItem;
 
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        setAnimate(true);
+    }, []);
+
     return (
-        <div className={`w-full rounded-md h-5 mt-2 ${pos} `}>
-            <div className={`rounded-md h-full ${background} ${width} flex items-center justify-center text-xs z-2`}>
+        <div className={`w-full rounded-md h-5 mt-2 ${pos}`}>
+            <div
+                className={`
+                    rounded-md h-full 
+                    ${background} 
+                    flex items-center justify-center text-xs z-2 
+                    transition-all duration-1000 ease-in-out
+                    ${animate ? width : "w-0"}
+                `}
+            >
                 <p className="text-white font-semibold">{text}</p>
             </div>
         </div>
