@@ -13,7 +13,7 @@ export default function RankingRight() {
 
             <div className="flex items-center justify-between w-full mt-4">
                 <Decrypted className="font-MMomo text-gray-950 text-md"> Next </Decrypted>
-                <Decrypted className="text-sm font-MMomo text-gray-950 mr-10"> 3 year exp. </Decrypted>
+                <Decrypted className="text-sm font-MMomo text-gray-950 mr-10"> 2 year exp. </Decrypted>
             </div>
             <RakingBar rank={4} position={2} />
 
@@ -24,7 +24,7 @@ export default function RankingRight() {
             <RakingBar rank={4} position={2} />
             <div className="flex items-center justify-between w-full mt-4">
                 <Decrypted className="font-MMomo text-gray-950 text-md"> TypeScript </Decrypted>
-                <Decrypted className="text-sm font-MMomo text-gray-950 mr-10"> 2 year exp.</Decrypted>
+                <Decrypted className="text-sm font-MMomo text-gray-950 mr-10"> 3 year exp.</Decrypted>
             </div>
             <RakingBar rank={4} position={2} />
 

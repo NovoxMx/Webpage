@@ -4,6 +4,7 @@ import Navbar from "./sections/navbar";
 import About from "./sections/About";
 import Skills from "./sections/skills";
 import Education from "./sections/education";
+import ScrollDown from "./constants/scrolldown";
 
 
 export default function Home() {
@@ -12,7 +13,10 @@ export default function Home() {
       <Navbar />
       <About />
       <Skills />
-      <Education />
+      <ScrollDown baseOpacity={0}>
+        <Education />
+      </ScrollDown>
+
       <Background />
     </div>
 
