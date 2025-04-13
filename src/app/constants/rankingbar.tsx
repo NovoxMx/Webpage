@@ -23,6 +23,13 @@ export default function RankingBar({ rank, position }: RankingBarProps) {
     const pos = Math.min(Math.max(position, 1), 2) === 1 ? positionData[0].pos : positionData[1].pos;
 
     const rankItem = rankData[validRank - 1];
+
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        setAnimate(true);
+    }, []);
+
     if (!rankItem) {
         return (
             <div className="w-full bg-red-500 rounded-md h-7 mt-2 flex items-center justify-center">
@@ -32,12 +39,6 @@ export default function RankingBar({ rank, position }: RankingBarProps) {
     }
 
     const { width, text, background } = rankItem;
-
-    const [animate, setAnimate] = useState(false);
-
-    useEffect(() => {
-        setAnimate(true);
-    }, []);
 
     return (
         <div className={`w-full rounded-md h-5 mt-2 ${pos}`}>
