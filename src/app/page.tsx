@@ -13,7 +13,7 @@ export default function Home() {
       <Navbar />
       <About />
       <Skills />
-      <ScrollDown baseOpacity={0}>
+      <ScrollDown baseOpacity={0.1}>
         <Education />
       </ScrollDown>
 
