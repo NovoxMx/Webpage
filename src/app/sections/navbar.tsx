@@ -24,9 +24,9 @@ export default function Navbar() {
                         <h1 className="text-2xl font-MPMomo text-emerald-500">Angel Marin</h1>
                     </div>
                     <div className="flex justify-around w-1/3 font-MMomo">
-                        <a href="/" className="text-lg font-semibold">About</a>
-                        <a href="/" className="text-lg font-semibold">Projects</a>
-                        <a href="/" className="text-lg font-semibold">Contact</a>
+                        <a href="#" className="text-lg font-semibold">About</a>
+                        <a href="#" className="text-lg font-semibold">Projects</a>
+                        <a href="#" className="text-lg font-semibold">Contact</a>
                     </div>
                 </div>
             </div>
