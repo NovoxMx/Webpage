@@ -5,9 +5,9 @@ export const metadata: Metadata = {
   title: "Novox Website",
   description: "Portfolio website for Novox",
   icons: {
-    icon: "/svg/Novox.svg",
-    shortcut: "/svg/Novox.svg",
-    apple: "/svg/Novox.svg",
+    icon: "/svg/Logo.svg",
+    shortcut: "/svg/Logo.svg",
+    apple: "/svg/Logo.svg",
   }
 };
 
