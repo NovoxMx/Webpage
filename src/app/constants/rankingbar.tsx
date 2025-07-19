@@ -41,7 +41,7 @@ export default function RankingBar({ rank, position }: RankingBarProps) {
     const { width, text, background } = rankItem;
 
     return (
-        <div className={`w-full rounded-md h-5 mt-2 ${pos}`}>
+        <div className={`w-full rounded-md h-6 mt-2 ${pos}`}>
             <div
                 className={`
                     rounded-md h-full 
