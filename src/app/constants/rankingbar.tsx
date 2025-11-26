@@ -32,7 +32,7 @@ export default function RankingBar({ rank, position }: RankingBarProps) {
 
     if (!rankItem) {
         return (
-            <div className="w-full bg-red-500 rounded-md h-7 mt-2 flex items-center justify-center">
+            <div className="w-full bg-red-500 rounded-md h-6 mt-2 flex items-center justify-center">
                 <p className="text-white font-semibold">Error: Rango inválido</p>
             </div>
         );
