@@ -36,6 +36,6 @@
   ],
   "exclude": [
     "node_modules",
-    "src/app/components/novox.tsx"
+    "src/app/components/novox.tsx",
   ]
 }
