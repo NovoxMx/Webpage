@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { LanguageProvider } from "./context/languageContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <LanguageProvider>
       <body>
         {children}
       </body>
+      </LanguageProvider>
     </html>
   );
 }
