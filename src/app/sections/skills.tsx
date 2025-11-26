@@ -4,11 +4,14 @@ import RakingLeft from "../components/rakingleft";
 import RankingRight from "../components/rankingright";
 import SimpleContainer from "../components/simplecontainer";
 import Title from "../components/title";
+import { useLanguage } from "../context/languageContext";
 
 export default function Skills() {
+    const { lang } = useLanguage();
+
     return (
         <SimpleContainer>
-            <Title>Skills</Title>
+            <Title>{lang === "en" ? "Tech Stack" : "Habilidades"}</Title>
             <div className="flex mt-4 justify-center items-center">
                 <div className="w-1/4">
                     <Unique
