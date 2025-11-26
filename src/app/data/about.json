@@ -1,0 +1,22 @@
+{
+    "en": [
+        {
+            "content": "Software Developer focused on supporting the creation and renewal of systems, applications, and websites, delivering impactful and positive results for both the company and the user. My personal focus is on Front-End development and UX/UI design centered on the user experience. Excited to take on new dynamic challenges and apply my knowledge to them.",
+            "age": "22 years old",
+            "from": "Mexico",
+            "degree": "Bachelor's in Computer Science",
+            "native_lang": "Spanish (Native)",
+            "other_lang": "English (B2)"
+        }
+    ],
+    "es": [
+        {
+            "content": "Desarrollador de software enfocado en apoyar la creación y renovación de sistemas, aplicaciones y sitios web, entregando resultados impactantes y positivos tanto para la empresa como para el usuario. Mi enfoque personal está en el desarrollo Front-End y el diseño UX/UI centrado en la experiencia del usuario. Emocionado por asumir nuevos desafíos dinámicos y aplicar mis conocimientos en ellos.",
+            "age": "22 años",
+            "from": "México",
+            "degree": "Ciencias de la Computación",
+            "native_lang": "Español (Nativo)",
+            "other_lang": "Inglés (B2)"
+        }
+    ]
+}

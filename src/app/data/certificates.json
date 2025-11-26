@@ -1,0 +1,29 @@
+{
+  "certificates": [
+    {
+      "src": "/images/AWS_Badge.png",
+      "alt": "AWS Cloud Fundation",
+      "href": "https://www.credly.com/badges/003a10db-135e-4e1c-a5cf-7b0dfff965c9/public_url"
+    },
+    {
+      "src": "/images/CyberOpsAssociate_Badge.png",
+      "alt": "CyberOps Associate",
+      "href": "https://www.credly.com/badges/a6b9d276-77b3-4e6d-bf77-e96703173e65/public_url"
+    },
+    {
+      "src": "/images/cloud-devops.png",
+      "alt": "Intel Cloud DevOps",
+      "href": "https://www.credly.com/badges/80bc939c-0950-43c9-9190-91f4fb4b1957/public_url"
+    },
+    {
+      "src": "/images/MongoDB_Schema.png",
+      "alt": "MongoDB Schema Design Patterns and Anti-patterns Skill Badge",
+      "href": "https://www.credly.com/badges/eab3f28b-b798-439c-a164-caf75d12a951/public_url"
+    },
+    {
+      "src": "/svg/Python_Coder.svg",
+      "alt": "Python Coder",
+      "href": "https://www.kaggle.com/certification/badges/ngelmarn/30"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "en": [
+    {
+      "title": "SSI Schaefer",
+      "image": "/images/SSI_Schafer.png",
+      "alt": "SSI Schaefer Project",
+      "description": "Development of a comprehensive portal for the integral management of travel expenses, aimed at optimizing the administrative flow and improving the visibility of movements made by employees. Key responsibilities:\n-Implementation of the travel expense request module, allowing users to register and submit their expenses quickly.\n-Development of the approval and rejection flow, facilitating responsible parties to validate requests with clear criteria and complete traceability.\n-Construction of views for the visualization of requested and approved travel expenses, providing greater transparency and control over each stage of the process.\n-Integration of a detailed history of travel expenses, including the record of purchases and expenses made during each trip, with structured and easy-to-consult information.",
+      "skills": [
+        ["React", "#61DBFB"],
+        ["Node.js", "#3C873A"],
+        ["Figma", "#F24E1E"],
+        ["Bootstrap", "#602C50"],
+        ["MySQL", "#00758F"]
+      ],
+
+      "start": "April",
+      "end": "June",
+      "year": 2023
+    },
+    {
+      "title": "BAMX",
+      "image": "/images/BAMX.png",
+      "alt": "BAMX Project",
+      "description": "An application was developed with the following functionalities:\n-Reporting of new incidents by users.\n-Viewing of reported incidents and their current status.\n-Access to logs with detailed information about the corresponding area.\n-Viewing of the complete log history (which could also be exported to PDF).",
+      "skills": [
+        ["Expo", "#000020"],
+        ["TypeScript", "#3178C6"],
+        ["Tailwindcss", "#38B2AC"],
+        ["React", "#61DBFB"]
+      ],
+      "start":"September",
+      "end": "December",
+      "year": 2023
+    },
+    {
+      "title": "Flex Logic",
+      "image": "/images/FlexLogin.png",
+      "alt": "Flex Logic Project",
+      "description": "Development of a web platform for the management and administration of EDI standards, designed to centralize the configuration, operation, and visibility of electronic documents between different clients and their business partners. Main responsibilities and contributions:\n-Dynamic configuration of customized EDI rules (e.g., EDI 850) for each merchant.\n-Centralized management of clients and partners, enabling processes for sending and receiving EDI documents.\n-Visibility control by file or client, allowing information to be hidden in internal work stages.\n-Implementation of an operational flow with states Not done / In process / Completed, ensuring clear and efficient tracking.",
+      "skills": [
+        ["Next.js", "#000000"],
+        ["TypeScript", "#3178C6"],
+        ["Tailwindcss", "#38B2AC"],
+        ["MongoDB", "#47A248"]
+      ],
+      "start": "February",
+      "end": "June",
+      "year": 2024
+    },
+    {
+      "title": "BanBajio Web Redesign",
+      "image": "/images/BanBajio.png",
+      "alt": "BanBajio Web Redesign",
+      "description": "Comprehensive redesign of BanBajío's digital platform, focused on modernizing the interface and improving user experience. Key contributions include:\n-Analysis and complete restructuring of the website's visual architecture.\n-Creation of a new design in Figma with a modern, clean, and accessible approach.\n-Development of microinteractions and animations that optimize navigation and reinforce the perception of fluidity.\n-Implementation of informative pop-ups for sustainable promotions.\n-Proposed improvements in content hierarchy and overall usability, facilitating access to key services.",
+      "skills": [
+        ["Figma", "#F24E1E"],
+        ["CSS", "#264DE4"],
+        ["JavaScript", "#F0DB4F"],
+        ["Html5", "#E34C26"]
+      ],
+      "start": "May",
+      "end": "June",
+      "year": 2025
+    }
+  ],
+  "es": [
+    {
+      "title": "SSI Schaefer",
+      "image": "/images/SSI_Schafer.png",
+      "alt": "Proyecto SSI Schaefer",
+      "description": "Desarrollo de un portal completo para la gestión integral de viáticos, orientado a optimizar el flujo administrativo y mejorar la visibilidad de los movimientos realizados por los colaboradores.Responsabilidades clave:\n-Implementación del módulo de solicitud de viáticos, permitiendo a los usuarios registrar y enviar sus gastos de manera ágil. \n-Desarrollo del flujo de aprobación y rechazo, facilitando a los responsables validar solicitudes con criterios claros y trazabilidad completa.\n-Construcción de vistas para la visualización de viáticos solicitados y aprobados, brindando mayor transparencia y control sobre cada etapa del proceso.\n-Integración de un historial detallado de viáticos, incluyendo el registro de compras y gastos realizados durante cada viaje, con información estructurada y fácil de consultar.",
+      "skills": [
+        ["React", "#61DBFB"],
+        ["Node.js", "#3C873A"],
+        ["Figma", "#F24E1E"],
+        ["Bootstrap", "#602C50"],
+        ["MySQL", "#00758F"]
+      ],
+      "start": "Abril",
+      "end": "Junio",
+      "year": 2023
+    },
+    {
+      "title": "BAMX",
+      "image": "/images/BAMX.png",
+      "alt": "Proyecto BAMX",
+      "description": "Desarrollo de aplicación con las siguientes funcionalidades:\n-Reporte de incidentes por los usuarios.\n-Visualización de incidentes reportados y su estado.\n-Acceso a las bitácoras con información detallada.\n-Visualización del historial completo de bitácoras (Ademas de poder exportarse a PDF).",
+      "skills": [
+        ["Expo", "#000020"],
+        ["TypeScript", "#3178C6"],
+        ["Tailwindcss", "#38B2AC"],
+        ["React", "#61DBFB"]
+      ],
+      "start": "Septiembre",
+      "end": "Diciembre",
+      "year": "2023"
+    },
+    {
+      "title": "Flex Logic",
+      "image": "/images/FlexLogin.png",
+      "alt": "Proyecto Flex Logic",
+      "description": "Desarrollo de una plataforma web para la gestión y administración de estándares EDI, diseñada para centralizar la configuración, operación y visibilidad de documentos electrónicos entre distintos clientes y sus socios comerciales. Responsabilidades y aportaciones principales:\n-Configuración dinámica de reglas EDI (ej. EDI 850) personalizadas para cada comercio.\n-Gestión centralizada de clientes y partners, habilitando procesos de envío y recepción de documentos EDI.\n-Control de visibilidad por archivo o cliente, permitiendo ocultar información en etapas internas de trabajo.\n-Implementación de un flujo operativo con estados No hecho / En proceso / Completado, asegurando seguimiento claro y eficiente.",
+      "skills": [
+        ["Next.js", "#000000"],
+        ["TypeScript", "#3178C6"],
+        ["Tailwindcss", "#38B2AC"],
+        ["MongoDB", "#47A248"]
+      ],
+      "start": "Febrero",
+      "end": "Junio",
+      "year": 2024
+    },
+    {
+      "title": "BanBajio Rediseño Web",
+      "image": "/images/BanBajio.png",
+      "alt": "Proyecto BanBajio",
+      "description": "Rediseño integral de la plataforma digital de BanBajío, enfocado en modernizar la interfaz y mejorar la experiencia del usuario. Las principales contribuciones incluyen:\n-Análisis y reestructuración completa de la arquitectura visual del sitio web.\n-Creación de un nuevo diseño en Figma con un enfoque moderno, limpio y accesible.\n-Desarrollo de microinteracciones y animaciones que optimizan la navegación y refuerzan la percepción de fluidez.\n-Implementación de pop-ups informativos de promociones sustentables.\n-Propuesta de mejoras en la jerarquía de contenido y en la usabilidad general, facilitando el acceso a servicios clave.",
+      "skills": [
+        ["Figma", "#F24E1E"],
+        ["CSS", "#264DE4"],
+        ["JavaScript", "#F0DB4F"],
+        ["Html5", "#E34C26"]
+      ],
+      "start": "Mayo",
+      "end": "Junio",
+      "year": 2025
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "en": [
+    {
+      "id": "1",
+      "image": "/images/ScaleAI.png",
+      "title": "Scale AI",
+      "Init_date": "March 2024",
+      "Fin_date": "June 2025",
+      "content": "I was performed research and development of artificial intelligence models focused on detecting and analyzing text prompts within images and code snippets, contributing to the enhancement of visual and semantic understanding systems."
+    },
+
+    {
+      "id": "2",
+      "image": "/images/ComingSoonBadge.png",
+      "title": "Coming Soon",
+      "Init_date": "When you require my services",
+      "Fin_date": "Until you need me",
+      "content": "If you're looking for a developer capable of creating efficient, scalable applications with careful attention to detail, this is the place!!! A space where code quality and the constant pursuit of elegant solutions form the foundation of every project."
+    }
+  ],
+
+  "es": [
+    {
+      "id": "1",
+      "image": "/images/ScaleAI.png",
+      "title": "Scale AI",
+      "Init_date": "Marzo 2024",
+      "Fin_date": "Junio 2025",
+      "content": "Realicé investigación y desarrollo de modelos de inteligencia artificial enfocados en la detección y análisis de prompts de texto dentro de imágenes y fragmentos de código, contribuyendo a la mejora de sistemas de comprensión visual y semántica."
+    },
+    {
+      "id": "2",
+      "image": "/images/ComingSoonBadge.png",
+      "title": "Próximamente",
+      "Init_date": "Cuando necesites mis servicios",
+      "Fin_date": "Hasta que me necesites",
+      "content": "Si estás buscando a un desarrollador capaz de crear aplicaciones eficientes, escalables y con atención al detalle. Este es el lugar!!! Un espacio donde la calidad del código y la búsqueda constante de soluciones elegantes se convierten en la base de cada proyecto."
+    }
+  ]
+}
