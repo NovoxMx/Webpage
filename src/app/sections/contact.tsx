@@ -1,5 +1,4 @@
 "use client";
-import { div } from "framer-motion/client";
 import { useState } from "react";
 import Title from "../components/title";
 
