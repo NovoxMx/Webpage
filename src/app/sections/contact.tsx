@@ -24,7 +24,7 @@ export default function ContactForm() {
     };
 
     return (
-        <div>
+        <div className="mb-20">
             <Title>Contact Me</Title>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-10 w-full max-w-lg mx-auto">
 
