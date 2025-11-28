@@ -13,7 +13,7 @@ export default function About() {
     return (
         <SimpleContainer className="mt-24">
             <Title>{lang === "en" ? "About Me" : "Sobre Mí"}</Title>
-            <div className="flex justify-center mt-6 mb-6">
+            <div className="flex justify-center mb-6">
                 <p className="text-lg font-MMomo text-gray-700 text-justify w-6/7"> {aboutList[0].content} </p>
             </div>
 
