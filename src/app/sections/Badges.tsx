@@ -8,12 +8,12 @@ export default function Badges() {
   const certificates = getCertificates();
 
   return (
-    <div>
+    <div className="mb-20">
       <Title>
         {lang === "en" ? "Badges & Certifications" : "Insignias y Certificaciones"}
       </Title>
 
-      <div className="w-3/4 mx-auto mt-10" style={{ height: "150px", position: "relative", overflow: "hidden" }}>
+      <div className="w-3/4 mx-auto mt-10" style={{ height: "100px", position: "relative", overflow: "hidden" }}>
         <LogoLoop
           logos={certificates}
           speed={120}
