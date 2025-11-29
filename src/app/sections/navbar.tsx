@@ -5,17 +5,23 @@ import { AiFillSun } from "react-icons/ai";
 import { getNavbar } from "../utils/getNavbar";
 import type { Navbar } from "../data/interfaces"
 import { useLanguage } from "../context/languageContext";
+import { useTheme } from "../context/themeContext";
 
 export default function Navbar() {
+    /* CONTEXTS */
+    // Language Context 
     const { lang, setLang } = useLanguage();
+    // Theme Context
+    const { darkMode, toggleTheme } = useTheme();
 
-    const navlist: Navbar [] = getNavbar(lang);
+    // Navbar Json
+    const navlist: Navbar[] = getNavbar(lang);
 
+    /* SCROLL LOGIC */
     const [show, setShow] = useState(true);
     const [lastScroll, setLastScroll] = useState(0);
-    const [darkMode, setDarkMode] = useState(false);
+    
 
-    const toggleTheme = () => setDarkMode(prev => !prev);
 
     useEffect(() => {
         const handleScroll = () => {

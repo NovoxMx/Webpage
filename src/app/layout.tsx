@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { LanguageProvider } from "./context/languageContext";
 import "./globals.css";
+import { ThemeProvider } from "./context/themeContext";
 
 export const metadata: Metadata = {
   title: "Novox Website",
@@ -19,11 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <LanguageProvider>
       <body>
-        {children}
+        <ThemeProvider>
+          <LanguageProvider>
+            {children}
+          </LanguageProvider>
+        </ThemeProvider>
       </body>
-      </LanguageProvider>
     </html>
   );
 }
