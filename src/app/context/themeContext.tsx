@@ -3,46 +3,50 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
 interface ThemeContextType {
-  darkMode: boolean;
-  toggleTheme: () => void;
+    darkMode: boolean;
+    isAnimating: boolean;
+    toggleTheme: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
+    const [isAnimating, setIsAnimating] = useState(false);
 
-  // Cargar desde localStorage + detectar sistema
-  useEffect(() => {
-    const saved = localStorage.getItem("theme");
-    if (saved) {
-      setDarkMode(saved === "dark");
-      document.documentElement.classList.toggle("dark", saved === "dark");
-    } else {
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setDarkMode(prefersDark);
-      document.documentElement.classList.toggle("dark", prefersDark);
-    }
-  }, []);
+    useEffect(() => {
+        const saved = localStorage.getItem("theme");
+        if (saved) {
+            setDarkMode(saved === "dark");
+            document.documentElement.classList.toggle("dark", saved === "dark");
+        }
+    }, []);
 
-  const toggleTheme = () => {
-    setDarkMode(prev => {
-      const newState = !prev;
-      document.documentElement.classList.toggle("dark", newState);
-      localStorage.setItem("theme", newState ? "dark" : "light");
-      return newState;
-    });
-  };
+    const toggleTheme = () => {
+        setIsAnimating(true); // Inicia animación de íconos
 
-  return (
-    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+        setTimeout(() => {
+            // Cambiar el color DESPUÉS de la animación
+            setDarkMode(prev => {
+                const newTheme = !prev;
+                document.documentElement.classList.toggle("dark", newTheme);
+                localStorage.setItem("theme", newTheme ? "dark" : "light");
+                return newTheme;
+            });
+
+            setIsAnimating(false);
+        }, 300); // ⬅ el MISMO tiempo que duration-300
+    };
+
+    return (
+        <ThemeContext.Provider value={{ darkMode, isAnimating, toggleTheme }}>
+            {children}
+        </ThemeContext.Provider>
+    );
 }
 
 export function useTheme() {
-  const ctx = useContext(ThemeContext);
-  if (!ctx) throw new Error("useTheme must be used inside ThemeProvider");
-  return ctx;
+    const ctx = useContext(ThemeContext);
+    if (!ctx) throw new Error("useTheme must be inside ThemeProvider");
+    return ctx;
 }

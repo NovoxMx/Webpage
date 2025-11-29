@@ -12,7 +12,7 @@ export default function Navbar() {
     // Language Context 
     const { lang, setLang } = useLanguage();
     // Theme Context
-    const { darkMode, toggleTheme } = useTheme();
+    const { darkMode, toggleTheme, isAnimating } = useTheme();
 
     // Navbar Json
     const navlist: Navbar[] = getNavbar(lang);
@@ -20,7 +20,7 @@ export default function Navbar() {
     /* SCROLL LOGIC */
     const [show, setShow] = useState(true);
     const [lastScroll, setLastScroll] = useState(0);
-    
+
 
 
     useEffect(() => {
@@ -69,16 +69,16 @@ export default function Navbar() {
             <div className="mt-6 flex ">
 
                 {/* NAVBAR PRINCIPAL */}
-                <div className="w-[75vw] bg-black text-white rounded-sm shadow-black shadow-lg h-12 flex items-center justify-between px-6">
+                <div className={`w-[75vw] ${darkMode ? "bg-black text-white" : "bg-white text-black"} rounded-sm shadow-black shadow-lg h-12 flex items-center justify-between px-6`}>
                     <div className="flex items-center ml-6 gap-80">
                         <svg
                             width="24"
                             height="24"
                             viewBox="0 0 140 160"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="transition-colors"
-                            fill="white"
-                            stroke="white"
+                            className="transition-colors text-black dark:text-white"
+                            fill="currentColor"
+                            stroke="currentColor"
                             strokeWidth="2"
                         >
                             <path d="M16.0182 7.04321V1.04858H27.7958L112.598 120.124V10.8731L109.601 7.04321H97.9447V1.04858H138.242V7.04321H125.753L123.255 10.8731V141.09H118.528L21.6798 7.04321H16.0182Z" />
@@ -110,38 +110,34 @@ export default function Navbar() {
                     style={{ right: "calc((100% - 75%) / 2.5 - 3.5rem)" }}
                     onClick={() => setLang(lang === "en" ? "es" : "en")}
                 >
-                    <div className="w-20 h-12 bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center">
-                        <FaLanguage color="white" size={48} />
+                    <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center">
+                        <FaLanguage size={48} />
                     </div>
                 </div>
 
 
-                <div className="fixed top-0 z-20 mt-6 cursor-pointer"
+                <div
+                    className="fixed top-0 z-20 mt-6 cursor-pointer"
                     style={{ right: "calc((100% - 75%) / 5.5 - 3.5rem)" }}
                     onClick={toggleTheme}
                 >
-                    <div className="w-20 h-12 bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center">
+                    <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center relative">
 
-                        <div
-                            className={`
-                                transition-all duration-300 transform
-                                ${darkMode ? "opacity-0 rotate-90" : "opacity-100 rotate-0"}
-                            `}
-                        >
-                            <AiFillSun color="white" size={34} />
-                        </div>
+                        {/* SUN ICON */}
+                        <AiFillSun
+                            size={34}
+                            className={`absolute transition-all duration-500 transform ${isAnimating ? "pointer-events-none" : ""} ${darkMode ? "opacity-0 rotate-90" : "opacity-100 rotate-0"}`}
+                        />
 
-                        <div
-                            className={`
-                                absolute transition-all duration-300 transform
-                                ${darkMode ? "opacity-100 rotate-0" : "opacity-0 rotate-90"}
-                            `}
-                        >
-                            <FaMoon color="white" size={28} />
-                        </div>
+                        {/* MOON ICON */}
+                        <FaMoon
+                            size={28}
+                            className={`absolute transition-all duration-500 transform ${isAnimating ? "pointer-events-none" : ""} ${darkMode ? "opacity-100 rotate-0" : "opacity-0 rotate-90"}`}
+                        />
 
                     </div>
                 </div>
+
 
             </div>
         </div>
