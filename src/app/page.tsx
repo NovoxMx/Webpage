@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 
 import Background from "./constants/background";
-import About from "./sections/about";
-import Badges from "./sections/badges";
+import About from "./sections/About";
+import Badges from "./sections/Badges";
 import Navbar from "./sections/navbar";
 import Skills from "./sections/skills";
 import Education from "./sections/education";
