@@ -34,7 +34,7 @@ export default function Experience() {
                             </div>
                         </div>
 
-                        <div className="flex-1 bg-white dark:bg-neutral-900 shadow-md rounded-xl p-5">
+                        <div className="flex-1 bg-neutral-200 dark:bg-neutral-900 shadow-md rounded-xl p-5">
                             <div className="flex flex-col">
                                 <div className="flex items-center justify-between">
                                     <h2 className="text-lg font-semibold text-neutral-900 dark:text-white">
