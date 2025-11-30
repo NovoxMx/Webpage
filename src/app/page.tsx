@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 
 import Background from "./constants/background";
 import Navbar from "./sections/navbar";
-import About from "./sections/About";
+import About from "./sections/about";
 import Skills from "./sections/skills";
 import Education from "./sections/education";
 import ScrollDown from "./constants/scrolldown";
 import Project from "./sections/projects";
 import Experience from "./sections/experience";
-import Badges from "./sections/Badges";
+import Badges from "./sections/badges";
 import PhoneWarning from "./components/phonewarning";
 import Contact from "./sections/contact";
 
