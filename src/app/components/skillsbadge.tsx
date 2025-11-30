@@ -19,7 +19,7 @@ export default function SkillBadge({
         <div className="flex items-center">
             <div className="w-34 h-full">
                 <div
-                    className={`flex flex-row items-center justify-center mt-6 p-1 gap-2 bg-transparent rounded-sm text-black font-MMomo text-sm ${className}`}
+                    className={`flex flex-row items-center justify-center mt-6 p-1 gap-2 bg-transparent rounded-sm text-black font-MMomo text-sm dark:text-white ${className}`}
                     style={{
                         border: `2px solid ${borderColor}`,
                         boxShadow: `0 0 10px ${shadowColor}`
