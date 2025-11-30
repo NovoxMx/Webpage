@@ -15,27 +15,27 @@ export default function Skills() {
             <div className="flex mt-4 justify-center items-center">
                 <div className="w-1/4">
                     <Unique
-                        texts={["typescript",
-                            "javascript",
-                            "react",
-                            "html",
-                            "css",
-                            "next.js",
-                            "node.js",
-                            "tailwindcss",
-                            "vercel",
-                            "aws",
-                            "docker",
-                            "git",
-                            "github",
+                        texts={["Typescript",
+                            "Javascript",
+                            "React",
+                            "Html",
+                            "CSS",
+                            "Next.js",
+                            "Node.js",
+                            "Tailwindcss",
+                            "Vercel",
+                            "AWS",
+                            "Docker",
+                            "Git",
+                            "Github",
                             "MySQL",
                             "MongoDB",
-                            "php",
-                            "python",
-                            "c++",
+                            "Php",
+                            "Python",
+                            "C++",
                             "Angular",
-                            "bootstrap",
-                            "figma",]}
+                            "Bootstrap",
+                            "Figma",]}
                         mainClassName="px-2 sm:px-2 md:px-3 bg-emerald-500 font-MPMomo text-white overflow-hidden py-0.5 sm:py-1 md:py-2 rounded-sm justify-center "
                         staggerFrom={"last"}
                         initial={{ y: "100%" }}
