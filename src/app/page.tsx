@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 
 import Background from "./constants/background";
+import About from "./sections/about";
+import Badges from "./sections/badges";
 import Navbar from "./sections/navbar";
 import Skills from "./sections/skills";
 import Education from "./sections/education";
@@ -11,8 +13,8 @@ import Project from "./sections/projects";
 import Experience from "./sections/experience";
 import PhoneWarning from "./components/phonewarning";
 import Contact from "./sections/contact";
-import Badges from "@/app/sections/badges";
-import About from "@/app/sections/about";
+
+
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
