@@ -16,7 +16,7 @@ export default function Education() {
             <Title>{lang === "en" ? "Education" : "Educación"}</Title>
 
             <div className="flex justify-around mt-10 mb-10">
-                <p className="text-lg font-MMomo text-gray-700 text-justify w-4/7"> {eduList[0].content} </p>
+                <p className="text-lg font-MMomo text-gray-700 text-justify w-4/7 dark:text-white"> {eduList[0].content} </p>
                 <Image
                     src={csn}
                     alt="CSN"
