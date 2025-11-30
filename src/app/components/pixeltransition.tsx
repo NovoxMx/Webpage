@@ -147,12 +147,12 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
         relative
         overflow-hidden
         rounded-[15px]
-        border-2
-        border-white
-        bg-white
+        bg-neutral-200
         text-gray-700
         cursor-pointer
-        font-MMomo
+        font-MMomo 
+        dark:bg-neutral-900
+        dark:text-white
       `}
       style={style}
       onClick={handleClick}
