@@ -23,7 +23,7 @@ export default function Projects() {
                         {projectList.map((project, index) => (
                             <div
                                 key={index}
-                                className={`flex flex-col items-center bg-black rounded-lg shadow-md p-4 h-150 
+                                className={`flex flex-col items-center bg-neutral-200 rounded-lg shadow-md p-4 h-150 dark:bg-neutral-900
                                     ${index === 0 ? "col-span-3" : ""}
                                     ${index === 2 || index === 3 ? "col-span-2" : ""}
                                 `}
@@ -61,7 +61,7 @@ export default function Projects() {
                                                         </div>
 
                                                         {/* Start - End - Year */}
-                                                        <p className={`text-sm text-gray-400 mt-4 ${isLarge ? "ml-6" : "ml-2"}`}>
+                                                        <p className={`text-sm text-natural-900 mt-4 ${isLarge ? "ml-6" : "ml-2"}`}>
                                                             {project.start} – {project.end} {project.year}
                                                         </p>
 
