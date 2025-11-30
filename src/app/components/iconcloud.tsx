@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { IconCloud } from "@/registry/magicui/icon-cloud";
 
 const slugs = [
@@ -24,13 +27,33 @@ const slugs = [
 ];
 
 export function IconCloudDemo() {
-  const images = slugs.map(
-    (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const check = () =>
+      setIsDark(document.documentElement.classList.contains("dark"));
+
+    check();
+
+    const observer = new MutationObserver(check);
+    observer.observe(document.documentElement, { attributes: true });
+
+    return () => observer.disconnect();
+  }, []);
+
+  // Light mode → colores originales
+  const lightImages = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}`
+  );
+
+  // Dark mode → todos blancos
+  const darkImages = slugs.map(
+    (slug) => `https://cdn.simpleicons.org/${slug}/ffffff`
   );
 
   return (
     <div className="relative flex size-full items-center justify-center overflow-hidden">
-      <IconCloud images={images} />
+      <IconCloud images={isDark ? darkImages : lightImages} />
     </div>
   );
 }
