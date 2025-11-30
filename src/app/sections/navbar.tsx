@@ -69,7 +69,7 @@ export default function Navbar() {
             <div className="mt-6 flex ">
 
                 {/* NAVBAR PRINCIPAL */}
-                <div className={`w-[75vw] ${darkMode ? "bg-black text-white" : "bg-white text-black"} rounded-sm shadow-black shadow-lg h-12 flex items-center justify-between px-6`}>
+                <div className={`w-[75vw] ${darkMode ? "bg-black text-white" : "bg-white text-black"} rounded-sm shadow-black shadow-lg h-12 flex items-center justify-between px-6 dark:shadow-white`}>
                     <div className="flex items-center ml-6 gap-80">
                         <svg
                             width="24"
@@ -110,7 +110,7 @@ export default function Navbar() {
                     style={{ right: "calc((100% - 75%) / 2.5 - 3.5rem)" }}
                     onClick={() => setLang(lang === "en" ? "es" : "en")}
                 >
-                    <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center">
+                    <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center dark:shadow-white">
                         <FaLanguage size={48} />
                     </div>
                 </div>
@@ -121,7 +121,7 @@ export default function Navbar() {
                     style={{ right: "calc((100% - 75%) / 5.5 - 3.5rem)" }}
                     onClick={toggleTheme}
                 >
-                    <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center relative">
+                    <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center dark:shadow-white relative">
 
                         {/* SUN ICON */}
                         <AiFillSun
