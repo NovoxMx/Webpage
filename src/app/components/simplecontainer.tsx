@@ -2,7 +2,7 @@ export default function SimpleContainer({ children, className }: { children: Rea
     return (
         <div className="flex items-center justify-center">
             <div className="w-3/4 h-full">
-                <div className={`flex flex-col mt-6 bg-white rounded-sm ${className}`}>
+                <div className={`flex flex-col mt-6 bg-white rounded-sm dark:bg-black ${className}`}>
                     {children}
                 </div>
             </div>
