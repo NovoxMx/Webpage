@@ -23,7 +23,7 @@ export default function Projects() {
                         {projectList.map((project, index) => (
                             <div
                                 key={index}
-                                className={`flex flex-col items-center bg-neutral-200 rounded-lg shadow-md p-4 h-150 dark:bg-neutral-900
+                                className={`flex flex-col items-center bg-neutral-200 rounded-lg shadow-md p-4 h-150 dark:bg-neutral-800
                                     ${index === 0 ? "col-span-3" : ""}
                                     ${index === 2 || index === 3 ? "col-span-2" : ""}
                                 `}

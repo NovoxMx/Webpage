@@ -51,10 +51,9 @@ export interface ExperienceData {
 
 // Interface Navbar
 export interface Navbar {
-    content1: string;
-    content2: string;
+    content1: string[];
+    content2: string[];
     content3: string;
-    CV: string;
 }
 
 export interface NavbarData {

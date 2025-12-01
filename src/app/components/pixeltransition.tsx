@@ -151,7 +151,7 @@ const PixelTransition: React.FC<PixelTransitionProps> = ({
         text-gray-700
         cursor-pointer
         font-MMomo 
-        dark:bg-neutral-900
+        dark:bg-neutral-800
         dark:text-white
       `}
       style={style}
