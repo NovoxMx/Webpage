@@ -1,18 +1,16 @@
 {
     "en": [
         {
-            "content1": "Resume",
-            "content2": "Projects",
-            "content3": "Contact",
-            "CV": "https://drive.google.com/file/d/1I9pM4Ntmf20l-r7CByTOfWNEAyfq8vfH/view?usp=sharing"
+            "content1":[ "Resume", "https://drive.google.com/file/d/1I9pM4Ntmf20l-r7CByTOfWNEAyfq8vfH/view?usp=sharing"],
+            "content2": ["Certifications","https://drive.google.com/drive/folders/1pKbfPSa9RFQ7A1Qz5mofSJIvNxbkhyQo?usp=sharing"],
+            "content3": "Contact"
         }
     ],
     "es": [
         {
-            "content1": "Currículum",
-            "content2": "Proyectos",
-            "content3": "Contacto",
-            "CV": "https://drive.google.com/file/d/1e1zMW83XlqUpARlwRMyG_frsYX3moSOE/view?usp=sharing"
+            "content1":[ "Currículum", "https://drive.google.com/file/d/1e1zMW83XlqUpARlwRMyG_frsYX3moSOE/view?usp=sharing"],
+            "content2": ["Certificaciónes","https://drive.google.com/drive/folders/1pKbfPSa9RFQ7A1Qz5mofSJIvNxbkhyQo?usp=sharing"],
+            "content3": "Contacto"
         }
     ]
 }
