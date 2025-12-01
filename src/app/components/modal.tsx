@@ -9,9 +9,12 @@ interface ModalProps {
 
 export default function Modal({ isOpen, onClose, children }: ModalProps) {
 
-    if (!isOpen) return null;
-
     useEffect(() => {
+        if (!isOpen) {
+            document.body.style.overflow = "auto";
+            return;
+        }
+
         const handleEsc = (e: KeyboardEvent) => {
             if (e.key === "Escape") onClose();
         };
@@ -23,12 +26,14 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
             document.body.style.overflow = "auto";
             window.removeEventListener("keydown", handleEsc);
         };
-    }, [isOpen, onClose]); 
+    }, [isOpen, onClose]);
+
+    if (!isOpen) return null;
 
     return (
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md
-                 bg-neutral-100/40 dark:bg-neutral-900/60"
+            className="fixed inset-0 z-50 flex items-center justify-center 
+                backdrop-blur-md bg-neutral-100/40 dark:bg-neutral-900/60"
             onClick={onClose}
         >
             <div
