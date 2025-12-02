@@ -10,11 +10,20 @@ import type { Navbar } from "../data/interfaces";
 import { useLanguage } from "../context/languageContext";
 import { useTheme } from "../context/themeContext";
 import ModalContact from "./modalContact";
+import TextType from "../components/textType";
 
 export default function Navbar() {
     /* CONTEXTS */
     const { lang, setLang } = useLanguage();
     const { darkMode, toggleTheme, isAnimating } = useTheme();
+
+    /* LOCAL STATE FOR ANIMATION */
+    const [displayLang, setDisplayLang] = useState(lang);
+
+    /* UPDATE DISPLAY LANG WHEN REAL LANG CHANGES (SYNC) */
+    useEffect(() => {
+        setDisplayLang(lang);
+    }, [lang]);
 
     /* NAVBAR TEXT */
     const navlist: Navbar[] = getNavbar(lang);
@@ -73,6 +82,19 @@ export default function Navbar() {
         return () => clearTimeout(timeout);
     }, [lang]);
 
+    /* HANDLE LANG CLICK WITH ANIMATION FIRST */
+    const handleLangClick = () => {
+        const nextLang = lang === "en" ? "es" : "en";
+
+        // 1) CAMBIAMOS SOLO EL DISPLAY → SE ANIMA
+        setDisplayLang(nextLang);
+
+        // 2) ESPERAMOS A QUE TEXTTYPE ESCRIBA (250ms)
+        setTimeout(() => {
+            setLang(nextLang);
+        }, 250);
+    };
+
     return (
         <>
             <div
@@ -122,7 +144,6 @@ export default function Navbar() {
                                 {navlist[0].content2[0]}
                             </div>
 
-                            {/* CONTACT → ABRE MODAL */}
                             <div
                                 onClick={() => setContactOpen(true)}
                                 className="text-lg font-semibold hover:text-emerald-500 cursor-pointer"
@@ -134,12 +155,18 @@ export default function Navbar() {
 
                     {/* LANGUAGE */}
                     <div
-                        className="fixed top-0 z-20 mt-6 cursor-pointer"
+                        className="fixed top-0 z-20 mt-6 cursor-pointer group"
                         style={{ right: "calc((100% - 75%) / 2.5 - 3.5rem)" }}
-                        onClick={() => setLang(lang === "en" ? "es" : "en")}
+                        onClick={handleLangClick}
                     >
-                        <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center dark:shadow-white">
-                            <FaLanguage size={48} />
+                        <div className="w-20 h-12 bg-white dark:bg-black rounded-sm shadow-black shadow-lg flex items-center justify-center dark:shadow-white font-MMomo">
+                            <TextType
+                                text={displayLang === "en" ? "EN" : "ES"}
+                                typingSpeed={200}
+                                showCursor={false}
+                                manualTrigger={true}
+                                className="text-2xl"
+                            />
                         </div>
                     </div>
 
