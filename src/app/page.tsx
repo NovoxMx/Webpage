@@ -21,7 +21,7 @@ export default function Home() {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768); // w < 768px = modo móvil
+      setIsMobile(window.innerWidth < 1024); 
     };
 
     checkMobile();
