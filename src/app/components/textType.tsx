@@ -237,8 +237,6 @@ interface TextTypeProps {
     onSentenceComplete?: (sentence: string, index: number) => void;
     startOnVisible?: boolean;
     reverseMode?: boolean;
-
-    /** 🔥 NUEVO: modo manual con diff typing */
     manualTrigger?: boolean;
 }
 
