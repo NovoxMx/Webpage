@@ -1,4 +1,5 @@
 import BoxGrid from "../components/boxgrid";
+import Image from "next/image";
 import PixelTransition from "../components/pixeltransition";
 import SimpleContainer from "../components/simplecontainer";
 import Title from "../components/title";
@@ -35,7 +36,7 @@ export default function Projects() {
                                 <PixelTransition
                                     firstContent={
                                         <div className="w-full h-full overflow-hidden">
-                                            <img
+                                            <Image
                                                 src={project.image}
                                                 alt={project.alt}
                                                 className="w-full h-full object-cover object-center rounded-md"
