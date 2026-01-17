@@ -1,3 +1,4 @@
+"use client";
 import BoxGrid from "../components/boxgrid";
 import Image from "next/image";
 import PixelTransition from "../components/pixeltransition";
