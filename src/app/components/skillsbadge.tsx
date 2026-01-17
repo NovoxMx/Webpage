@@ -15,6 +15,7 @@ export default function SkillBadge({
     const borderColor = color || "#34d399"; // fallback: emerald-300
     const shadowColor = color ? `${color}40` : "rgba(16,185,129,0.25)"; // 40 = 25% opacity
     const iconColor = color ? color.replace("#", "") : "000000";
+    const name = inc.toLowerCase();
 
 
     return (
@@ -30,7 +31,7 @@ export default function SkillBadge({
                     {children}
 
                     <Image
-                        src={`https://cdn.simpleicons.org/${inc}`}
+                        src={`https://cdn.simpleicons.org/${name}/${iconColor}`}
                         alt={`${inc} icon`}
                         width={20}
                         height={20}
