@@ -11,9 +11,11 @@ export default function SkillBadge({
     inc: string,
     color?: string
 }) {
-    
+
     const borderColor = color || "#34d399"; // fallback: emerald-300
     const shadowColor = color ? `${color}40` : "rgba(16,185,129,0.25)"; // 40 = 25% opacity
+    const iconColor = color ? color.replace("#", "") : "000000";
+
 
     return (
         <div className="flex items-center">
@@ -28,12 +30,13 @@ export default function SkillBadge({
                     {children}
 
                     <Image
-                        src={`https://cdn.simpleicons.org/${inc}/${color ? color.replace("#", "") : color}`}
+                        src={`https://cdn.simpleicons.org/${inc}/${iconColor}`}
                         alt={`${inc} icon`}
                         width={20}
                         height={20}
                         className="inline-block"
                     />
+
                 </div>
             </div>
         </div>
