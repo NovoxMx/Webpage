@@ -33,7 +33,7 @@ export default function SkillBadge({
 
                     <Image
                         src={`https://cdn.simpleicons.org/${name}/${iconColor}`}
-                        alt={`${inc} icon`}
+                        alt={`${name} icon`}
                         width={20}
                         height={20}
                         className="inline-block"
