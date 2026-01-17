@@ -38,10 +38,10 @@
       "alt": "Flex Logic Project",
       "description": "Development of a web platform for the management and administration of EDI standards, designed to centralize the configuration, operation, and visibility of electronic documents between different clients and their business partners. Main responsibilities and contributions:\n-Dynamic configuration of customized EDI rules (e.g., EDI 850) for each merchant.\n-Centralized management of clients and partners, enabling processes for sending and receiving EDI documents.\n-Visibility control by file or client, allowing information to be hidden in internal work stages.\n-Implementation of an operational flow with states Not done / In process / Completed, ensuring clear and efficient tracking.",
       "skills": [
-        ["Next.js", "#000000"],
-        ["TypeScript", "#3178C6"],
-        ["Tailwindcss", "#38B2AC"],
-        ["MongoDB", "#47A248"]
+        ["Next.js", "000000"],
+        ["TypeScript", "3178C6"],
+        ["Tailwindcss", "38B2AC"],
+        ["MongoDB", "47A248"]
       ],
       "start": "February",
       "end": "June",
