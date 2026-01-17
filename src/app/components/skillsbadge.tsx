@@ -28,7 +28,7 @@ export default function SkillBadge({
                     {children}
 
                     <Image
-                        src={`https://cdn.simpleicons.org/${inc}/${color ? color.replace("#", "") : inc}`}
+                        src={`https://cdn.simpleicons.org/${inc}/${color ? color.replace("#", "") : color}`}
                         alt={`${inc} icon`}
                         width={20}
                         height={20}
