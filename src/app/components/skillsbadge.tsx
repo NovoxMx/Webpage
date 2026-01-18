@@ -36,6 +36,7 @@ export default function SkillBadge({
                         alt={`${name} icon`}
                         width={20}
                         height={20}
+                        unoptimized
                         className="inline-block"
                     />
 
