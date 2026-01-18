@@ -2,6 +2,8 @@
 const nextConfig = {
   images: {
     dangerouslyAllowSVG: true,
+    contentSecurityPolicy:
+      "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: "https",
@@ -9,28 +11,6 @@ const nextConfig = {
       },
     ],
   },
-
-  async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "Content-Security-Policy",
-            value: [
-              "default-src 'self'",
-              "img-src 'self' data: https://cdn.simpleicons.org",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
-              "style-src 'self' 'unsafe-inline'",
-              "font-src 'self' data:",
-              "connect-src 'self'",
-            ].join("; "),
-          },
-        ],
-      },
-    ];
-  },
 };
 
 export default nextConfig;
-
