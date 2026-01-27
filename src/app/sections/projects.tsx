@@ -41,6 +41,9 @@ export default function Projects() {
                                                 src={project.image}
                                                 alt={project.alt}
                                                 className="w-full h-full object-cover object-center rounded-md"
+                                                width={400}
+                                                height={200}
+                                                unoptimized
                                             />
                                         </div>
                                     }

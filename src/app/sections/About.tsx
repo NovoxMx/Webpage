@@ -20,7 +20,7 @@ export default function About() {
             <div className="flex justify-center gap-4">
                 <Descriptor text={aboutList[0].age} />
                 <Descriptor text={aboutList[0].from} />
-                <Descriptor text={aboutList[0].degree} />
+                <Descriptor text={aboutList[0].degree} onClick={() => window.open('https://certificados.tec.mx/certificate/25bc1e0c1965583280e38b96c50a01cf', '_blank')}/>
                 <Descriptor text={aboutList[0].native_lang} />
                 <Descriptor text={aboutList[0].other_lang} onClick={() => window.open('https://certs.duolingo.com/jvcq7bn1k4r7q9m9', '_blank')} />
             </div>
